@@ -2,14 +2,14 @@
 Testing skills on HTML5 Canvas with live editing 
 
 ## What is Canvas
-The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript. The <canvas> element is only a container for graphics. 
+The HTML `<canvas>` element is used to draw graphics, on the fly, via JavaScript. The <canvas> element is only a container for graphics. 
   
   ## Whats the use
   It is used alongwith JavaScript to actually draw the graphics and render it one the keyboard & mouse events
   
   
 
-## Create a Canvas
+## Create a `canvas`
 > drawing the canvas in html, just add the canvas element
 ``` html
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
@@ -19,7 +19,7 @@ Your browser does not support the canvas element.
 
 ## Draw a Rectangle
 > drawing a rectangle
-``` html
+``` js
         <canvas id="myCanvasRec" width="200" height="100" style="border:1px solid #c3c3c3;">
                 Your browser does not support the canvas element.
         </canvas>
@@ -59,7 +59,7 @@ Your browser does not support the canvas element.
 
 ## Draw a Circle glow
 > Use the shadow attribute for blur
-``` html
+```js
         <canvas id="myCanvas3g" width="400" height="200" style="border:1px solid #d3d3d3;background:#ffffff;">
                 Your browser does not support the HTML5 canvas tag.
         </canvas>
@@ -116,16 +116,16 @@ Your browser does not support the canvas element.
 > Gradients can be used to fill rectangles, circles, lines, text, etc. Shapes on the canvas are not limited to solid colors.
 
 There are two different types of gradients:
-- createLinearGradient(x,y,x1,y1) - creates a linear gradient
-- createRadialGradient(x,y,r,x1,y1,r1) - creates a radial/circular gradient
+- `createLinearGradient(x,y,x1,y1)` - creates a linear gradient
+- `createRadialGradient(x,y,r,x1,y1,r1)` - creates a radial/circular gradient
 
 Once we have a gradient object, we must add two or more color stops.
-The addColorStop() method specifies the color stops, and its position along the gradient. Gradient positions can be anywhere between 0 to 1.
+The `addColorStop()` method specifies the color stops, and its position along the gradient. Gradient positions can be anywhere between 0 to 1.
 
 To use the gradient, set the fillStyle or strokeStyle property to the gradient, then draw the shape (rectangle, text, or a line).
 
 ### Create gradient
-``` html
+``` js
         <canvas id="myCanvasgra" width="200" height="100" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -146,7 +146,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
 
 ### Create radial gradient
 >
-``` html
+``` js
         <canvas id="myCanvasgr2" width="200" height="100" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -167,13 +167,13 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
 
  ## Drawing Text on the Canvas 
 > To draw text on a canvas, the most important property and methods are:
-- font - defines the font properties for the text
-- fillText(text,x,y) - draws "filled" text on the canvas
-- strokeText(text,x,y) - draws text on the canvas (no fill)
+- `font` - defines the font properties for the text
+- `fillText(text,x,y)` - draws "filled" text on the canvas
+- `strokeText(text,x,y)` - draws text on the canvas (no fill)
 
-### Using fillText()
+### Using `fillText()`
 
-``` html
+``` js
         <canvas id="myCanvastx1" width="200" height="100" style="border:1px solid #d3d3d3;">
                 Your browser does not support the canvas element.
         </canvas>
@@ -190,10 +190,10 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
         <pre>
 ```
-### Using strokeText()
+### Using `strokeText()`
 > some
 
-``` html
+``` js
         <canvas id="myCanvasst" width="200" height="100" style="border:1px solid #d3d3d3;">
                 Your browser does not support the canvas element.
         </canvas>
@@ -223,9 +223,9 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
 ```
 ## Shadow 
 
-### HTML canvas shadowOffsetY Property
+### HTML canvas `shadowOffsetY` Property
 > Draw a rectangle with a shadow placed 20 pixels below the rectangle's top position:
-``` html
+``` js
         <canvas id="myCanvassy" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -240,7 +240,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas shadowOffsetX Property
+### HTML canvas `shadowOffsetX` Property
 ``` html
         <canvas id="myCanvassx" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -256,7 +256,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas shadowColor Property
+### HTML canvas `shadowColor` Property
 ``` html
         <canvas id="myCanvasshc" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -275,7 +275,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas shadowBlur Property
+### HTML canvas `shadowBlur` Property
 ``` html
         <canvas id="myCanvassb" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -290,7 +290,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas lineJoin Property
+### HTML canvas `lineJoin` Property
 ``` html
         <canvas id="myCanvaslj" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -308,9 +308,9 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas lineCap Property
+### HTML `canvas` `lineCap` Property
 > The three different line caps
-``` html
+``` js
         <canvas id="myCanvaslc" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -339,8 +339,8 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas rect() Method
-``` html
+### HTML canvas `rect()` Method
+``` js
         <canvas id="myCanvascr" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -352,7 +352,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas clearRect() Method
+### HTML canvas `clearRect()` Method
 ``` html
         <canvas id="myCanvasdr" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -366,7 +366,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas strokeRect() Method
+### HTML canvas `strokeRect()` Method
 ``` html
         <canvas id="myCanvassr" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -378,7 +378,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas fillRect() Method
+### HTML canvas `fillRect()` Method
 ``` html
         <canvas id="myCanvasfr" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -390,7 +390,7 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas beginPath() Method
+### HTML canvas `beginPath()` Method
 ``` html
         <canvas id="myCanvasbp" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -414,14 +414,14 @@ To use the gradient, set the fillStyle or strokeStyle property to the gradient, 
         </script>
 ```
 
-### HTML canvas quadraticCurveTo() Method
+### HTML `canvas quadraticCurveTo()` Method
 
 #### Definition and Usage
-> The quadraticCurveTo() method adds a point to the current path by using the specified control points that represent a quadratic Bézier curve.
+> The `quadraticCurveTo()` method adds a point to the current path by using the specified control points that represent a quadratic Bézier curve.
         
-A quadratic Bézier curve requires two points. The first point is a control point that is used in the quadratic Bézier calculation and the second point is the ending point for the curve. The starting point for the curve is the last point in the current path. If a path does not exist, use the beginPath() and moveTo() methods to define a starting point.
+A quadratic Bézier curve requires two points. The first point is a control point that is used in the quadratic Bézier calculation and the second point is the ending point for the curve. The starting point for the curve is the last point in the current path. If a path does not exist, use the `beginPath()` and `moveTo()` methods to define a starting point.
 
-``` javascript
+``` js
 Start point: moveTo(20,20)
 Control point: quadraticCurveTo(20,100,200,20)
 End point: quadraticCurveTo(20,100,200,20) 
@@ -433,7 +433,7 @@ cpy	|The y-coordinate of the Bézier control point
 x	|The x-coordinate of the ending point
 y	|The y-coordinate of the ending point
 
-``` html
+``` js
 <canvas id="myCanvasqbc" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -447,8 +447,8 @@ y	|The y-coordinate of the ending point
         </script>
 ```
 
-### HTML canvas bezierCurveTo() Method
-``` html
+### HTML `canvas bezierCurveTo()` Method
+``` js
         <canvas id="myCanvascbc" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
 
@@ -462,7 +462,7 @@ y	|The y-coordinate of the ending point
         </script>
 ```
 
-### HTML canvas arcTo() Method
+### HTML canvas `arcTo()` Method
 Create an arc between two tangents on the canvas:</p>
         
             Parameter	|Description
@@ -488,7 +488,7 @@ Create an arc between two tangents on the canvas:</p>
         </script>
 ```
 
-### HTML canvas isPointInPath() Method
+### HTML `canvas isPointInPath()` Method
 ``` html
         <canvas id="myCanvasptp" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -504,8 +504,8 @@ Create an arc between two tangents on the canvas:</p>
 ```
 ## Transformations 
 
-### HTML canvas scale() Method
-> The scale() method scales the current drawing, bigger or smaller.
+### HTML canvas `scale()` Method
+> The `scale()` method scales the current drawing, bigger or smaller.
         
 Note: If you scale a drawing, all future drawings will also be scaled. The positioning will also be scaled. If you scale(2,2);
 drawings will be positioned twice as far from the left and top of the canvas as you specify.
@@ -524,7 +524,7 @@ drawings will be positioned twice as far from the left and top of the canvas as 
         </script>
 ```
 
-### HTML canvas rotate() Method
+### HTML canvas `rotate()` Method
 > To calculate from degrees to radians: degrees*Math.PI/180. Example: to rotate 5 degrees, specify the following: 5x*Math.PI/180
 
 ``` html
@@ -538,7 +538,7 @@ drawings will be positioned twice as far from the left and top of the canvas as 
                 ctx.fillRect(50, 20, 100, 50);
         </script>
 ```
-### HTML canvas transform() Method
+### HTML canvas `transform()` Method
 Notice that each time you call transform(), it builds on the previous transformation matrix:
 ``` html
         <canvas id="myCanvastrn" width="300" height="150" style="border:1px solid #d3d3d3;">
@@ -561,7 +561,7 @@ Notice that each time you call transform(), it builds on the previous transforma
         </script>
 ```
 
-### HTML canvas translate() Method
+### HTML canvas `translate()` Method
 Draw a rectangle in position (10,10), set new (0,0) position to (70,70). Draw same rectangle again (notice that the rectangle
                 now starts in position (80,80):
 ``` html
@@ -577,7 +577,7 @@ Draw a rectangle in position (10,10), set new (0,0) position to (70,70). Draw sa
         </script>
 ```
 
-### HTML canvas textAlign Property
+### HTML canvas `textAlign` Property
 Create a red line in position 150. Position 150 is the anchor point for all the text defined in the example below. Study
                 the effect of each textAlign property value:
 
@@ -611,7 +611,7 @@ Create a red line in position 150. Position 150 is the anchor point for all the 
         </script>
 ```
 
-### HTML canvas textBaseline Property
+### HTML canvas `textBaseline` Property
 ``` html
         <canvas id="myCanvastbp" width="400" height="200" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -641,7 +641,7 @@ Create a red line in position 150. Position 150 is the anchor point for all the 
                 ctx.fillText("Hanging", 290, 100);
         </script>
 ```
-### HTML canvas fillText() Method
+### HTML canvas `fillText()` Method
 ``` html
         <canvas id="myCanvasft" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -665,7 +665,7 @@ Create a red line in position 150. Position 150 is the anchor point for all the 
         </script>
 ```
 
-### HTML canvas globalAlpha Property
+### HTML canvas `globalAlpha` Property
 ``` html
         <canvas id="myCanvasga" width="300" height="150" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -685,7 +685,7 @@ Create a red line in position 150. Position 150 is the anchor point for all the 
         </script>
 ```
 
-## HTML canvas globalCompositeOperation Property
+## HTML canvas `globalCompositeOperation` Property
 
 ``` html
         <script>
@@ -722,3 +722,4 @@ Create a red line in position 150. Position 150 is the anchor point for all the 
         </script>
 ```
 
+---
